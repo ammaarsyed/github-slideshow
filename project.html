@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+         html {
+             border: 5px solid teal;
+         }
+
+        body {
+            background: linear-gradient(to right, aqua, navy);
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color:rgba(0,0,0,0.5);
+            letter-spacing:0.01em;
+            text-align: center;
+            font-size:1700%;
+        }
+
+        input {
+           position:absolute;
+           top:0px;
+           left:1000px;
+           border:2px solid black;
+        }
+
+        .colour2 {
+            position:absolute;
+            left:1050px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .colour1 {
+            position:absolute;
+            left: 950px;
+            width: 100px;
+            height: 100px;
+        }
+        button {
+        position: absolute;
+      top: 10px;
+      left:10px;
+      width: 80px;
+      background-color: aqua;
+      animation-name: example;
+  animation-duration: 4s;
+    animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+      from {background-color: aqua;}
+      to {background-color: navy;}
+}
+
+.quiz {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+    </style>
+</head>
+<body id="gradient">
+    <h1><strong><b><i>colour generator</i></b></strong></h1>
+    <input class="colour1" type="color" name="colour1" value="#00FFFF"><input class="colour2" type="color" name="colour2" value="#008080">
+    <button onclick="myFunction()">alert box notification</button>
+    <button onclick="promptFunction()">feedback</button>
+    <a href="quiz.html"><button class="quiz">quiz</button></a>
+
+<script>
+function myFunction() {
+    const notification = "This website can change its colour with the help of the input element.";
+  alert(notification);
+
+}
+</script>
+<script>
+    function promptFunction() {
+       var promp = window.prompt("please give feedback to us");
+       console.log(promp);
+       alert("this is your feedback :" + promp);
+    }
+</script>
+    <script type="text/javascript" src="script1.js"></script>
+</body>
+</html>

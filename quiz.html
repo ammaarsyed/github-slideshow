@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="project.html"><button>-back</button></a>
+    <script>
+    var questions = [
+        {
+        prompt: "What is the colour of a bannana\n\(a)teal(b)orange\n\(c)yellow",
+        answer: "c"
+        },
+        {
+            prompt: "what year is going on\n\(a)2021\n\(b)2020\n\(c)2019",
+            answer: "a"
+        },
+        {
+            prompt:"what is the national bird of india\n\(a)eagle\n\(b)peacock\n\(c)pigeon",
+            answer: "b"
+        }
+         ]
+
+         var score = 0;
+         for(var i=0; i < questions.length; i++){
+             var response = window.prompt(questions[i].prompt);
+             if(response == questions[i].answer){
+                 score++;
+                 alert("correct")
+             } else {
+                 alert("wrong!!")
+             }
+         }
+         alert("you got  " + score + "/" + questions.length);
+   </script>
+</body>
+</html>
